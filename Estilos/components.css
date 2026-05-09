@@ -1,0 +1,105 @@
+.view {
+    border: 3px solid red;
+}
+
+.fundo-rosado {
+    background: var(--cor-branco-rosado);
+}
+
+.titulo-principal p {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--cor-rosado-escuro);
+    font-weight: var(--fonte-weight-400);
+    font-size: 12.8px;
+}
+
+.titulo-principal h3 {
+    text-align: center;
+    font-size: 33px;
+    font-weight: var(--fonte-weight-500);
+    color: var(--cor-roxo);
+}
+
+header {
+    height: 0;
+    padding-bottom: 800px;
+    overflow: hidden;
+    background-image: linear-gradient(135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+}
+
+.menu-svg-hamburguer {
+    width: 50px;
+    height: 50px;
+    fill: var(--cor-branco-05);
+    border: 1px solid var(--cor-branco-01);
+    padding: 4px;
+}
+
+.hero-texto-h1 h1 {
+    font-size: 40px;
+    color: var(--cor-branco);
+    font-weight: var(--fonte-weight-300);
+}
+
+.hero-texto-paragrafo p {
+    font-size: 17px;
+    font-weight: var(--fonte-weight-300);
+    color: var(--cor-rosa-transparente);
+}
+
+.features {
+    padding: 40px 0;
+
+}
+
+.features-card {
+    background: var(--cor-branco);
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);
+    ;
+}
+
+.features-card::before {
+    content: "";
+    width: 3px;
+    background: var(--gradiente-roxo-rosa);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.features-card svg {
+    width: 130px;
+}
+
+.features-card-texto h4 {
+    font-size: 20px;
+    font-weight: var(--fonte-weight-500);
+    color: var(--cor-roxo);
+}
+
+.features-card-texto p {
+    font-size: 14px;
+    color: var(--cor-cinza-medio);
+}
+
+.discover-info h2 {
+    font-size: 30px;
+    font-weight: var(--fonte-weight-300);
+    color: var(--cor-roxo);
+}
+
+.discover-info p {
+    color: var(--cor-cinza-medio);
+}
+
+.discover-info button {
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    font-size: 12px;
+    font-weight: var(--fonte-weight-500);
+    background: var(--cor-rosa-choque);
+    padding: .6rem 2rem;
+    border-radius: 3px;
+}

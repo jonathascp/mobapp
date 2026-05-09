@@ -1,0 +1,16 @@
+:root {
+    --cor-branco: #fff;
+    --cor-branco-01: rgba(255, 255, 255, .1);
+    --cor-branco-05: rgba(255, 255, 255, .5);
+    --cor-rosa-transparente: #ffb8f6;
+    --cor-roxo: #633991;
+    --cor-rosa-choque: #E84394;
+    --cor-branco-rosado: #fdedf9;
+    --cor-rosado-escuro: #998a9b;
+    --cor-cinza-medio: #959094;
+    --gradiente-roxo-rosa: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+
+    --fonte-weight-300: 300;
+    --fonte-weight-400: 400;
+    --fonte-weight-500: 500;
+}
