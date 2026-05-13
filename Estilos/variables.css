@@ -3,9 +3,10 @@
     --cor-branco-01: rgba(255, 255, 255, .1);
     --cor-branco-05: rgba(255, 255, 255, .5);
     --cor-rosa-transparente: #ffb8f6;
+    --cor-rosa: #e38cb7;
     --cor-roxo: #633991;
     --cor-rosa-choque: #E84394;
-    --cor-branco-rosado: #fdedf9;
+    --cor-branco-rosado: #fdf5fb;
     --cor-rosado-escuro: #998a9b;
     --cor-cinza-medio: #959094;
     --gradiente-roxo-rosa: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);

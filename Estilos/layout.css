@@ -60,3 +60,23 @@
     align-items: flex-start;
     gap: 15px;
 }
+
+.more-conteudo-lista {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3px;
+}
+
+.more-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.more-conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
