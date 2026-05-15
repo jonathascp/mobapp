@@ -42,10 +42,22 @@ header {
     font-weight: var(--fonte-weight-300);
 }
 
+@media (min-width: 768px) {
+    .hero-texto-h1 h1 {
+        font-size: 60px;
+    }
+}
+
 .hero-texto-paragrafo p {
     font-size: 17px;
     font-weight: var(--fonte-weight-300);
     color: var(--cor-rosa-transparente);
+}
+
+@media (min-width: 768px) {
+    .hero-texto-paragrafo p {
+        font-size: 23px;
+    }
 }
 
 .features {
@@ -71,6 +83,13 @@ header {
 
 .features-card svg {
     width: 130px;
+}
+
+
+@media (min-width: 768px) {
+    .features-card svg {
+        width: 45px;
+    }
 }
 
 .features-card-texto h4 {
@@ -131,7 +150,7 @@ header {
 
 .more-conteudo-texto h2 {
     color: var(--cor-roxo);
-    font-size: 27px;
+    font-size: 45px;
     font-weight: var(--fonte-weight-300);
 }
 
