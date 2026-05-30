@@ -18,10 +18,6 @@
     align-items: center;
 }
 
-.hero {
-    padding: 70px 0;
-}
-
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -29,6 +25,7 @@
     justify-content: center;
 }
 .hero-texto {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
