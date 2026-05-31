@@ -1,6 +1,7 @@
 const menu = document.querySelector(".menu");
 const menuLista = document.querySelector(".menu-lista");
 const menuLinks = document.querySelectorAll(".menu-lista p");
+const menuLinksDesktop = document.querySelectorAll(".menu-lista-desktop p");
 const btnMenu = document.querySelector(".btnMenu");
 const secoes = document.querySelectorAll("section");
 
@@ -29,23 +30,28 @@ btnMenu.addEventListener("click", () => {
 
 });
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const id = entry.target.id;
-            menuLinks.forEach(link => {
-                if(link.dataset.id === id)
-                {
-                    link.classList.add("linkSelecionado");
-                }
-                else
-                {
-                     link.classList.remove("linkSelecionado");
-                }
-            })
-        }
-    })
-}, {});
+const animacaoMenuLista = (arr) => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                arr.forEach(link => {
+                    if (link.dataset.id === id) {
+                        link.classList.add("linkSelecionado");
+                    }
+                    else {
+                        link.classList.remove("linkSelecionado");
+                    }
+                })
+            }
+        })
+    }, {});
 
-secoes.forEach(el => observer.observe(el));
+    return observer;
+}
+
+
+secoes.forEach(el => animacaoMenuLista(menuLinks).observe(el));
+secoes.forEach(el => animacaoMenuLista(menuLinksDesktop).observe(el));
+// secoes.forEach(el => observer.observe(el));
 
