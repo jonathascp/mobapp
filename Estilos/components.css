@@ -54,6 +54,11 @@
     color: rgba(255,255,255,.7);
 }
 
+.linkSelecionado {
+    color: var(--cor-branco);
+    transition: all .5s ease;
+}
+
 .ativado {
     display: flex;
 }
@@ -77,9 +82,10 @@
     padding: 8px 25px;
 }
 
+
+
 .menu.gradiente-ativado {
     background: var(--gradiente-menu);
-    transition: all 0.3s ease;
 }
 .menu-svg-hamburguer {
     width: 50px;
