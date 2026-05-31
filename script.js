@@ -1,11 +1,22 @@
-const menu = document.querySelector(".menu");
-const menuLista = document.querySelector(".menu-lista");
+const menu = document.querySelector(".menu"); // CONTEM O GRADIENTE
+const menuLista = document.querySelector(".menu-lista"); // MENU ABRE OU FECHA
 const btnMenu = document.querySelector(".btnMenu");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
         menu.classList.add("gradiente-ativado");
     }
+    else if (window.scrollY == 0 && menuLista.classList.contains("ativado"))
+    {
+        menu.classList.add("gradiente-ativado");
+    }
+    else if (window.scrollY == 0 && !menuLista.classList.contains("ativado"))
+    {
+        menu.classList.remove("gradiente-ativado");
+    }
+    
+    
+
 })
 
 btnMenu.addEventListener("click", () => {
